@@ -10,4 +10,5 @@ with open("alice.txt", encoding="utf-8") as fin:
 			freqdict[token] = freqdict[token] + 1
 
 for token, frequency in freqdict.items():
-	print(f"{token}\t{frequency}")
+	if frequency == 1:
+		print(f"{token}\t{frequency}")
